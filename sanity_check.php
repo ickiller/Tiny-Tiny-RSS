@@ -18,6 +18,9 @@
 	}
 
 	$purifier_cache_dir = "lib/htmlpurifier/library/HTMLPurifier/DefinitionCache/Serializer";
+	if (defined('HTML_PURIFIER_CACHE')) {
+		$purifier_cache_dir = HTML_PURIFIER_CACHE;
+	}
 
 	if (!is_writable($purifier_cache_dir)) {
 		$err_msg = "config: HTMLPurifier cache directory should be writable by anyone (chmod -R 777 $purifier_cache_dir)";

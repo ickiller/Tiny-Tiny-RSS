@@ -38,6 +38,9 @@
 	define('TMP_DIRECTORY', '/tmp');
 	// Directory for temporary files
 
+	define('HTML_PURIFIER_CACHE', 'cache/htmlpurifier');
+	// Directory to use for caching by HTMLPurifier
+
 	define('DAEMON_SLEEP_INTERVAL', 120);
 	// Interval between update daemon update runs
 
